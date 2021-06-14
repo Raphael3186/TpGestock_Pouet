@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 // Lance la connexion à la BDD
 require "../controller/connect.php";
 
@@ -12,23 +12,22 @@ if(!empty($_POST["inputMail"]) && !empty($_POST["inputPwd"]))
     $pwd = $_POST["inputPwd"];
 }
 
-/* create a prepared statement */
-$stmt = $mysqli->prepare("SELECT email, mot_de_passe FROM utilisateurs WHERE email = ? AND mot_de_passe = ?");
+$req = "SELECT email, mot_de_passe FROM utilisateurs WHERE email = '".$mail."' AND  mot_de_passe = '".$pwd."'";
+$resultat = $mysqli->query($req);
 
-/* bind parameters for markers */
-$stmt->bind_param('ss', $mail, $pwd);
-
-/* execute query */
-$stmt->execute();
-
-/* bind result variables */
-$stmt->bind_result($test, $test2);
-
-/* fetch value */
-$stmt->fetch();
-
-
-var_dump($test);
-var_dump($test2);
-var_dump($stmt);
+if($resultat->num_rows > 0)
+{
+    $_SESSION["user"] = $mail;
+    echo "Vous êtes connectés. Vous allez être redirigé...";
+    ?>
+    <meta http-equiv="refresh" content="3;url=../index.php">
+<?php
+}
+else
+{
+    echo "Le mail et/ou le mot est incorrect, veuillez réessayer...";
+    ?>
+    <meta http-equiv="refresh" content="3;url=../index.php">
+<?php
+}
 ?>
