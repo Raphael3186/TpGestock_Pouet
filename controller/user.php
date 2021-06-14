@@ -1,7 +1,7 @@
 <?php
 session_start();
 // Lance la connexion à la BDD
-require "../controller/connect.php";
+require_once "../controller/connect.php";
 
 $mail="";
 $pwd="";
