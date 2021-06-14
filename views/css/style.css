@@ -11,3 +11,17 @@
 .container{
     display: flex;
 }
+
+#pouet {
+    display: flex;
+    justify-content: space-between;
+}
+
+.conexion form{
+    display: flex;
+
+}
+.conexion form button{
+    margin-top: 35px;
+    height: 30px !important;
+}
