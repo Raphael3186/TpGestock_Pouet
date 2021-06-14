@@ -1,0 +1,13 @@
+#buttom{
+    display: block; 
+}
+
+.container button{
+    width: 100px !important;
+    height: 100px !important;
+    
+}
+
+.container{
+    display: flex;
+}
