@@ -18,9 +18,9 @@ $resultat = $mysqli->query($req);
 if($resultat->num_rows > 0)
 {
     $_SESSION["user"] = $mail;
-    echo "Vous êtes connectés. Vous allez être redirigé...";
+    echo "Vous êtes connectés. Vous allez être redirigés...";
     ?>
-    <meta http-equiv="refresh" content="3;url=../index.php">
+    <meta http-equiv="refresh" content="2;url=../index.php">
 <?php
 }
 else
