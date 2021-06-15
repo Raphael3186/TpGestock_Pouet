@@ -8,6 +8,7 @@ $resultat = $mysqli->query($req);
 
 ?>
 <div class="container" id="tableau">
+  <input placeholder="recherche..." id="recherche"></input>
   <table 
       id="#myTable"
       class="table table-striped">
@@ -26,14 +27,14 @@ $resultat = $mysqli->query($req);
       </tr>
     </thead>
 
-    <tbody>
+    <tbody id="myTable">
     <?php
       while($champs = mysqli_fetch_assoc($resultat))
       {
           ?>
           <tr>
               <?php
-              echo "<th scope='row'>".$champs["id"]."</th>";
+              echo "<td scope='row'>".$champs["id"]."</td>";
                   echo "<td>".$champs["code_produit"]."</td>";
                   echo "<td>".$champs["nom"]."</td>";
                   echo "<td>".$champs["detail"]."</td>";
@@ -50,7 +51,26 @@ $resultat = $mysqli->query($req);
       ?>
     </tbody>
 
+   
+
   </table>
+  
+  <script>
+    $(document).ready(function(){
+      $("#recherche").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myTable tr").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+    $('#myTable').DataTable();
+    $('.dataTables_length').addClass('bs-select');
+    });
+  </script>
  
 </div>
 
