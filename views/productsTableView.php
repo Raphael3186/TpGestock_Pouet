@@ -7,9 +7,9 @@ $req = "SELECT * FROM produits";
 $resultat = $mysqli->query($req);
 
 ?>
-<div class="container">
+<div class="container" id="tableau">
   <table 
-      id="table"
+      id="#myTable"
       class="table table-striped">
     <thead class="thead-dark">
       <tr>
@@ -49,6 +49,8 @@ $resultat = $mysqli->query($req);
       }
       ?>
     </tbody>
+
   </table>
+ 
 </div>
 
