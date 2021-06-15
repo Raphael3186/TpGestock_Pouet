@@ -48,7 +48,7 @@
     </div>
     <div class=" row ">
         <div class="col">
-        <a href="index.php">  
+          
         <button type="button" class="btn btn-warning btn">
             <i class="bi bi-stack">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stack" viewBox="0 0 16 16">
@@ -59,7 +59,7 @@
             <br>
             Stocks
         </button>
-        </a> 
+         
             <button type="button" class="btn btn-secondary btn" >
                 <i class="bi bi-clock-history">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock-history" viewBox="0 0 16 16">
