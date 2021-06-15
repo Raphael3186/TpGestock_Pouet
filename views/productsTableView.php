@@ -1,6 +1,6 @@
 <?php
 // Connexion BDD
-require "C:\Users\Raphael\Desktop\CDA_Formation\php\GESTOCK\TpGestock_Pouet\controller\connect.php";
+require "controller/connect.php";
 
 
 $req = "SELECT * FROM produits";

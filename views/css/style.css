@@ -17,11 +17,11 @@
     justify-content: space-between;
 }
 
-.conexion form{
+.connexion form{
     display: flex;
 
 }
-.conexion form button{
+.connexion form button{
     margin-top: 35px;
     height: 30px !important;
 }
