@@ -19,6 +19,7 @@
 
   <body>
         <?php
+            require_once "config/config.php";
             require_once "views/index.php";
         ?>
   </body>
