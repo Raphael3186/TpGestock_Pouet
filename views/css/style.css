@@ -41,4 +41,14 @@
     border: 1px solid #ccc;
 }
 
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+
+#Ajout{
+    display: grid;
+    width: 100%;
+}
 

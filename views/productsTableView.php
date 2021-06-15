@@ -65,12 +65,6 @@ $resultat = $mysqli->query($req);
       });
     });
   </script>
-  <script>
-    $(document).ready(function () {
-    $('#myTable').DataTable();
-    $('.dataTables_length').addClass('bs-select');
-    });
-  </script>
  
 </div>
 

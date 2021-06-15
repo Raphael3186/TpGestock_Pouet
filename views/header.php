@@ -19,7 +19,7 @@
 
 <header>
   <nav class="navbar navbar-expand-lg navbar-light bg-light" id="pouet">
-    <a class="navbar-brand" href="#">ACCUEIL</a>
+    <a class="navbar-brand" href="../index.php">ACCUEIL</a>
     <div class="connexion">
       <?php
       require_once "default.php";
