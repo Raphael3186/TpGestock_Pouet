@@ -1,6 +1,6 @@
 <?php
 // Connexion BDD
-require_once "../controller/connect.php";
+require_once "controller/connect.php";
 
 
 $req = "SELECT nom, prenom, email, actif FROM utilisateurs WHERE type = 'client'";
