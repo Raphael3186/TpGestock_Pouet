@@ -5,7 +5,7 @@ if(!isset($_SESSION["user"]))
 {
   ?>
   
-    <form action="controller/user.php" method="post">
+    <form action=<?php echo PATH_HOST_ABS ?> "/controller/user.php" method="post">
       <div class="form-group">
         <label for="inputMail">Mail</label>
         <input type="email" class="form-control" id="inputMail" aria-describedby="emailHelp" placeholder="exemple@mail" name="inputMail" required>
