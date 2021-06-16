@@ -2,6 +2,7 @@
 <div class="container" id="buttom">
     <div class=" row ">
         <div class="col">
+            <a href=<?php echo PATH_HOST_ABS ?>"/views/formAddProduct.php">
             <button type="button" class="btn btn-success btn" >
                 <i class="bi bi-cart2"> 
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
@@ -11,19 +12,23 @@
                 <br>
                 Entrée
             </button>
+            </a>
+            <a href=<?php echo PATH_HOST_ABS ?>"/views/formAddClient.php">
             <button type="button" class="btn btn-warning  btn">
-                <i class="bi bi-cart2"0> 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                <i class="bi bi-person-fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
                     </svg>
                 </i>
                 <br>
-                Sortie
+                Ajout Client
             </button>
+            </a>
         </div>
     </div>
     <div class=" row">
         <div class="col">
+            <a href=<?php echo PATH_HOST_ABS ?>"/views/usersTableView.php">    
             <button type="button" class="btn btn-primary btn">
                 <i class="bi bi-person-fill">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
@@ -31,9 +36,10 @@
                     </svg>
                 </i>
                 <br>
-                Users
+                Liste Utilisateur
             </button>
-            <a href="views/formAddUser.php">
+            </a>
+             <a href=<?php echo PATH_HOST_ABS ?>"/views/formAddUser.php"> 
                 <button type="button" class="btn btn-danger btn">
                     <i class="bi bi-person-fill">
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
@@ -48,7 +54,7 @@
     </div>
     <div class=" row ">
         <div class="col">
-          
+        <a href=<?php echo PATH_HOST_ABS ?>"/views/index.php">  
         <button type="button" class="btn btn-warning btn">
             <i class="bi bi-stack">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stack" viewBox="0 0 16 16">
@@ -59,7 +65,7 @@
             <br>
             Stocks
         </button>
-         
+        </a> 
             <button type="button" class="btn btn-secondary btn" >
                 <i class="bi bi-clock-history">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock-history" viewBox="0 0 16 16">
@@ -75,6 +81,7 @@
     </div>
     <div class=" row ">
         <div class="col">
+        <a href=<?php echo PATH_HOST_ABS ?>"/views/clientsTableView.php"> 
         <button type="button" class="btn btn-success btn">
                 <i class="bi bi-person-fill">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
@@ -83,7 +90,8 @@
                 </i>
                 <br>
                 Client
-            </button>
+        </button>
+        </a>
             <button type="button" class="btn btn-info btn">
                 <i class="bi bi-tags">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tags" viewBox="0 0 16 16">
