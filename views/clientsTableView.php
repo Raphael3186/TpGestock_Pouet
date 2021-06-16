@@ -1,5 +1,5 @@
 <?php
-// Connexion BDD
+
 require_once "header.php";
 require_once "../controller/connect.php";
 
